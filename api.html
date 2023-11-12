@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Test &mdash; spann</title>
+  <title>API &mdash; spann</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/copybutton.css" type="text/css" />
@@ -20,10 +20,12 @@
         <script src="_static/sphinx_highlight.js?v=4825356b"></script>
         <script src="_static/clipboard.min.js?v=a7894cd8"></script>
         <script src="_static/copybutton.js?v=f281be69"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Function" href="apis/functions.html" /> 
+    <link rel="next" title="Preprocess" href="apis/preprocess.html" />
+    <link rel="prev" title="Welcome to spann&#39;s documentation!" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -36,7 +38,7 @@
           
           <a href="index.html" class="icon icon-home">
             spann
-              <img src="_static/logo_200w.png" class="logo" alt="Logo"/>
+              <img src="_static/logo.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -49,9 +51,13 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="index.html">Welcome to spann's documentation!</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Overview.html">Overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="api.html">API</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Test</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="apis/preprocess.html">Preprocess</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apis/spann.html">SPANN Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apis/functions.html">Function</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tut.html">Tutorial</a></li>
 </ul>
 
         </div>
@@ -68,9 +74,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Test</li>
+      <li class="breadcrumb-item active">API</li>
       <li class="wy-breadcrumbs-aside">
-              <a href="https://github.com/michaelGuo1204/SPANN-torch/blob/main/docs/source/MDTest.md" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/michaelGuo1204/SPANN-torch/blob/main/docs/source/api.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
   </ul>
   <hr/>
@@ -78,16 +84,35 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="test">
-<h1>Test<a class="headerlink" href="#test" title="Permalink to this heading"></a></h1>
-<p>This is a MarkDown test page, append information hereafter</p>
+  <section id="api">
+<h1>API<a class="headerlink" href="#api" title="Permalink to this heading"></a></h1>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">API:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="apis/preprocess.html">Preprocess</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="apis/preprocess.html#spann.preprocess.anndata_preprocess"><code class="docutils literal notranslate"><span class="pre">anndata_preprocess()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="apis/preprocess.html#spann.preprocess.generate_dataloaders"><code class="docutils literal notranslate"><span class="pre">generate_dataloaders()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="apis/preprocess.html#spann.preprocess.generate_ae_params"><code class="docutils literal notranslate"><span class="pre">generate_ae_params()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="apis/spann.html">SPANN Model</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="apis/spann.html#spann.model.SPANN_model"><code class="docutils literal notranslate"><span class="pre">SPANN_model</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="apis/functions.html">Function</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="apis/functions.html#spann.functions.distribution_plot"><code class="docutils literal notranslate"><span class="pre">distribution_plot()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</div>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="apis/functions.html" class="btn btn-neutral float-left" title="Function" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to spann&#39;s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="apis/preprocess.html" class="btn btn-neutral float-right" title="Preprocess" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
